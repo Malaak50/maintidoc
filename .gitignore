@@ -1,0 +1,47 @@
+
+# ============================================================
+# MaintiDoc - Fichiers à exclure du contrôle de version
+#
+# Intérêt :
+# Éviter de versionner les secrets, environnements locaux,
+# caches Python et fichiers temporaires.
+#
+# Rôle :
+# Protéger les informations sensibles et garder le dépôt propre.
+# ============================================================
+
+# Variables d'environnement et secrets
+.env
+.env.*
+!.env.example
+
+# Environnements Python
+.venv/
+venv/
+env/
+
+# Cache et fichiers compilés Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Tests et outils de qualité
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# Journaux et fichiers temporaires
+*.log
+*.tmp
+*.bak
+
+# Configuration des éditeurs
+.vscode/
+.idea/
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
